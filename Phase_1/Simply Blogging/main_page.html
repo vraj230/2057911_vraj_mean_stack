@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Main page</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="styles.css">
+
+	<script src="main.js"></script>
+</head>
+<body onload="displayblog();">
+	<div class="container-fluid p-3 mb-2 bg-dark text-white" >
+	    <h1>Simply Blogging </h1>
+		
+		<nav class = "nav nav-pills nav-fill justify-content-end">
+			    <ul class="nav">
+		        <li class="nav-item">
+		          <a class="nav-link" href="#">Add Blog </a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="#">Home</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="#">About Us</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="#">Contacts</a>
+		        </li>
+		      </ul> 
+		</nav> 
+	</div> 
+
+     <div class="container-fluid">
+        <form class="form-group">
+
+       
+            <label class="label-primary">Title</label>
+            
+            
+            <input type="text" id="title" class="form-control"/><br/>
+            
+            
+          
+            <label class="label-primary">Articles</label>
+           
+           
+            <input type="text" id="article" class="form-control"/><br/>
+          
+            
+            <label class="label-primary">Add Image</label>
+           
+            
+            <input type="link" id="image" class="form-control"/><br/>
+           
+            <input type="button" value="Add Blog" onclick="addBlog();" class="btn btn-primary"/>
+            <input type="reset" value="Reset" class="btn btn-secondary"/>
+         </div>
+        </form>
+    
+
+    <div class = "container" id = "add_stuff">
+    </div>
+</body>
+</html>
