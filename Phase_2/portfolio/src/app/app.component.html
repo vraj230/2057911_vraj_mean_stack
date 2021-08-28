@@ -1,0 +1,52 @@
+<div *ngIf = "login">  
+  <h1> Login Page</h1>
+
+  <form [formGroup]="loginRef" (ngSubmit)="checkUser()">
+    <label>UserName </label>
+    <input type="text" formControlName="user"/><br/>
+    <label>Password </label>
+    <input type="password" formControlName="pass"/><br/>
+    <input type="submit" value="submit" [disabled]="!loginRef.valid"/>
+    {{msg}}
+  </form>
+  <a href="#" (click)="toSignup()"> Sign Up </a>
+
+</div>
+
+<div *ngIf = "signup">
+  <h1> Registration Form </h1>
+  <a href="#" (click)="toLogin()"> Login </a> <br/>
+
+  <form [formGroup]="signupRef" (ngSubmit) = "storeUser()">
+    <label>First Name </label> 
+    <input type="text" formControlName="first"/> <br/>
+    <label>Last Name </label> 
+    <input type="text" formControlName="last"/> <br/>
+    <label>UserName </label> 
+    <input type="text" formControlName="uid"/> <br/>
+    <label>Passowrd </label> 
+    <input type="password" formControlName="key"/> <br/>
+    <input type="submit" value="Register" [disabled]="!signupRef.valid"/> 
+    <input type="reset" value="reset">
+
+  </form>
+</div>
+
+<div *ngIf = "portfolio">
+  <h1> My Portfolio </h1>
+
+  <p> Welcome {{display_username}} </p>
+
+  <form [formGroup]="displayRef" (ngSubmit) = "displayUser()">
+    <label> Contact Name </label>
+    <input type = "text" formControlName="name"/> <br/>
+    <label> Phone No. </label>
+    <input type="text" formControlName="number"/> <br/>
+    <input type="submit" value="save" [disabled]="!displayRef.valid"/>
+  </form>
+
+  <h2> Contact Details </h2>
+  <table [innerHTML] = "data" border="1">
+  </table>
+
+  </div>
