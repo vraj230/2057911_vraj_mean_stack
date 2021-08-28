@@ -1,0 +1,41 @@
+<div>
+  <h1>Task Tracker</h1>
+  <br/> <br/>
+  
+  <h3>To-do-tasks</h3>
+
+  <form [formGroup]="signupRef" (ngSubmit) = "addTask()">
+    <label>ID:  </label> 
+    <input type="text" formControlName="id"/> <br/>
+    <label>Name: </label> 
+    <input type="text" formControlName="name"/> <br/>
+    <label>Task: </label> 
+    <input type="text" formControlName="task"/> <br/>
+    <label>Deadline:  </label> 
+    <input type="date" formControlName="date"/> <br/>
+    <input type="submit" value="submit" [disabled]="!signupRef.valid"/> 
+    <input type="reset" value="reset">
+
+  </form>
+
+  <br/> <br/>
+
+  <h3>To-do-List</h3>
+  <table border="1">
+    <tr>
+      <th>EmpID </th>
+      <th> Name </th>
+      <th> Task </th>
+      <th> Deadline </th>
+    </tr>
+
+    <tr *ngFor= "let task of tasks">
+      <th> {{task.id}} </th>
+      <th> {{task.name}} </th>
+      <th> {{task.item}} </th>
+      <th> {{task.date}} </th>
+    </tr>
+
+  </table>
+
+</div>
