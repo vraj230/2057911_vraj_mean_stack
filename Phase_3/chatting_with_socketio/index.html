@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript">
+        let chatlog = ""
+        var socket = io();
+        //send msg to the server
+        function info() 
+        {  
+            //console.log(document.getElementById("clientMsg").value);
+            socket.emit("obj", document.getElementById("clientMsg").value);
+            chatlog += "<p>Client: " + document.getElementById("clientMsg").value + "</p>";
+            document.getElementById("clientMsg").value="";
+            document.getElementById("display_server").innerHTML = chatlog;
+        }    
+        //recieve the msg from server
+        socket.on("res", (msg) => {
+                chatlog += "<p>Server: " + msg + "</p>";
+                document.getElementById("display_server").innerHTML = chatlog;
+            })
+    </script>
+</head>
+<body>
+    <h2>Chat bot</h2>
+    <div id = "display_server">
+
+        </div>  
+
+    <div>
+        <input type="text" id="clientMsg">
+        <input type="button" value="Send Message" onclick="info()">
+    </div>
+</body>
+</html>
