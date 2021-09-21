@@ -1,0 +1,93 @@
+[
+    {
+        "question":"What is an animal and programming language?",
+        "ans1":"Lion",
+        "ans2": "Java",
+        "ans3": "Python",
+        "ans4": "C++",
+        "correct":"Python"
+
+    },
+
+    {
+        "question":"Who is the current president of USA?",
+        "ans1":"Donald Trump",
+        "ans2": "Joe Biden",
+        "ans3": "Barack Obama",
+        "ans4": "The President",
+        "correct":"Joe Biden"
+
+    },
+    {
+        "question":"Which is not a valid data type in java",
+        "ans1":"int",
+        "ans2": "String",
+        "ans3": "float",
+        "ans4": "double",
+        "correct":"String"
+
+    },
+    {
+        "question":"What is 5+10?",
+        "ans1":"15",
+        "ans2": "12",
+        "ans3": "1",
+        "ans4": "510",
+        "correct":"15"
+
+    }
+    ,{
+        "question":"Which technology is not included in MEAN stack?",
+        "ans1":"Express JS",
+        "ans2": "node JS",
+        "ans3": "React",
+        "ans4": "Angular",
+        "correct":"React"
+
+    },
+    {
+        "question":"Which technology is not included in MERN stack?",
+        "ans1":"Express JS",
+        "ans2": "node JS",
+        "ans3": "React",
+        "ans4": "Angular",
+        "correct":"Angular"
+
+    },
+    {
+        "question":"Which of the following is not a search engine",
+        "ans1":"Google",
+        "ans2": "Bing",
+        "ans3": "Firefox",
+        "ans4": "Facebook",
+        "correct":"Facebook"
+
+    },
+    {
+        "question":"Which of the following is not a social media platform",
+        "ans1":"Facebook",
+        "ans2": "Snapchat",
+        "ans3": "Instagram",
+        "ans4": "Microsoft",
+        "correct":"Microsoft"
+
+    },
+    {
+        "question":"What is the capital of USA?",
+        "ans1":"Washington",
+        "ans2": "Washington D.C",
+        "ans3": "Gotham City",
+        "ans4": "New York",
+        "correct":"Washington D.C"
+
+    },
+    {
+        "question":"What does MVC stands for?",
+        "ans1":"Model View Control",
+        "ans2": "My Victroy Channel",
+        "ans3": "Model Very Control",
+        "ans4": "Monkey Vicious Camp",
+        "correct":"Model View Control"
+
+    }
+]

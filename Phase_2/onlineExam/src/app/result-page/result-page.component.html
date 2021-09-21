@@ -1,0 +1,11 @@
+<div *ngIf="pass"  class="pass">
+    <h1 style="color: greenyellow;">{{correct * 10}}%</h1>
+    <p>{{msg2}}</p>
+    <p>{{msg}}</p>
+</div>
+
+<div *ngIf="!pass" class="fail">
+    <h1 style="color: red;">{{correct * 10}}%</h1>
+    <p>{{msg2}}</p>
+    <p>{{msg}}</p>
+</div>

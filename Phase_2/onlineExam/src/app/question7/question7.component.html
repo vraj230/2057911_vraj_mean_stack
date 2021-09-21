@@ -1,0 +1,22 @@
+<div class="box"> 
+    <h3>{{currentQuestion.question}}</h3>
+    <!-- <br> -->
+    <input type="radio" name="question1" value="{{currentQuestion.ans1}}" (change) ="answer($event)"> 
+    {{currentQuestion.ans1}}
+    <br>
+    <input type="radio" name="question1" value="{{currentQuestion.ans2}}" (change) ="answer($event)">
+    {{currentQuestion.ans2}}
+    <br>
+    <input type="radio" name="question1" value="{{currentQuestion.ans3}}" (change) ="answer($event)">
+    {{currentQuestion.ans3}}
+    <br>
+    <input type="radio" name="question1" value="{{currentQuestion.ans4}}" (change) ="answer($event)">
+    {{currentQuestion.ans4}}
+    <br>
+    <br>
+    <button type ="button" mat-stroked-button color ="secondary" (click)="previousPage()">Previous Question</button>
+    &nbsp;
+   <button type ="button" mat-stroked-button color ="primary" (click)="nextPage()">Next Question</button>
+    <!-- <input type="button" value="Previous Question" (click)="previousPage()">
+   <input type="button" value="Next Question" (click)="nextPage()"> -->
+ </div>
